@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/frontend/css/pg.css">
+    <script src="/src/frontend/js/menu.js"></script>
+    <link rel="shortcut icon" href="/src/frontend/img/logo/PixelHubLogo.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>PixelHub</title>
+</head>
+<body>
+    <header class="blurred-header">
+        <nav>
+            <a href="/index.html">
+                <button class="button" data-text="Awesome" style="cursor: pointer;">
+                    <span class="actual-text">&nbsp;PixelHub&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;By StanlyDev&nbsp;</span>
+                </button>
+            </a>
+            <div class="menu-toggle" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
+            <div class="menu-toggle2" id="menu-toggle2">
+                <p>x</p>
+            </div>
+            <ul class="nav-container" id="nav-container">
+                <a href="/src/frontend/pages/pg1.html"><li>Games</li></a>
+                <a href="/src/frontend/pages/bg1.html"><li>Wallpaper</li></a>
+                <a href="/src/frontend/pages/sw1.html"><li>Software</li></a>
+                <a href="/src/frontend/pages/about.html"><li>About</li></a>
+            </ul>
+        </nav>
+    </header>  
+    <main>
+        <div class="d-flex flex-column min-vh-100">
+            <main class="flex-1 py-5 px-3">
+                <div class="container">
+                    <h1 class="display-4 font-weight-bold mb-4" style="font-size: 1.8rem;">Lista de Juegos</h1>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/Blasphemous.jpg" class="card-img-top">
+                                <div class="card-content ms-3">
+                                    <h5 class="card-title">Blasphemous</h5>
+                                    <p class="card-description" style="font-size: 0.8rem;">
+                                        Es un juego de acción y plataformas sin piedad, con elementos de combate hack-n-slash, ambientado en el retorcido mundo de Cvstodia. Explora, mejora tus habilidades y masacra las hordas de enemigos que se interponen en tu misión para romper el ciclo de condenación eterna.
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p class="card-description" style="font-size: 0.8rem;">
+                                        Una terrible maldición conocida como el Milagro ha caído sobre la tierra de Cvstodia y sus habitantes. Eres el Penitente, el único superviviente de la masacre de la hermandad del Lamento Mudo. Estás atrapado en un ciclo de penitencia de muerte y resurrección constante, y solo tú puedes librar al mundo de este destino tan terrible y llegar al origen de tu angustia. Explora este mundo terrorífico y su religión retorcida y descubre los secretos que aguardan escondidos. Realiza combos devastadores y ejecuciones brutales para castigar a las hordas de monstruos grotescos y jefes titánicos dispuestos a desgarrarte en mil pedazos. Encuentra y equípate reliquias, cuentas de rosario y plegarias que te darán los poderes fervorosos para ayudarte a acabar con tu maldición eterna.
+                                    </p>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/xb65084khhh94pn/Blasphemous.rar/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/Celeste.png" class="card-img-top">
+                                <div class="card-content ms-3">
+                                    <h5 class="card-title">Celeste</h5>
+                                    <p style="font-size: 0.8rem;">
+                                        Ayuda a Madeline a sobrevivir a los demonios de su interior en su viaje hasta la cima de la montaña Celeste, en este ajustadísimo plataforma, obra de los creadores de TowerFall. Enfréntate a cientos de desafíos diseñados a mano, devela retorcidos secretos y, y reconstruye el misterio de la montaña.
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p style="font-size: 0.8rem;">
+                                        Ayuda a Madeline a sobrevivir a los demonios de su interior en su viaje a la cima de la montaña Celeste; un ajustadísimo plataforma diseñado a mano por los creadores del clásico multijugador TowerFall.
+                                    </p>
+                                    <ul style="font-size: 0.8rem;">
+                                        <li>Aventura de un jugador marcada por la narración; un encantador elenco de personajes y un argumento conmovedor de descubrimiento personal.</li>
+                                        <li>Gran montaña con más de 700 pantallas de duros desafíos y retorcidos secretos.</li>
+                                        <li>Brutales capítulos "cara B" para desbloquear; para los más osados.</li>
+                                        <li>Finalista en “Excellence in Audio” de IGF; más de 2 horas de música original con un asombroso piano y pegadizos ritmos de sintetizador.</li>
+                                        <li>Los mandos son sencillos y accesibles: salta, acelera en el aire y escala, pero con varias capas de profundidad de expresión que habrá que dominar, pues cada muerte enseña una lección. Las reapariciones relámpago te permiten seguir escalando mientras desvelas misterios y te enfrentas a numerosos peligros.</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/ebcga6n6k19qqxs/Celeste.rar/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/chronotrigger.jpg" class="card-img-top">
+                                <div class="card-content ms-3">
+                                    <h5 class="card-title">Chrono Trigger</h5>
+                                    <p style="font-size: 0.8rem;">
+                                        ¡El clásico juego de rol regresa cargado de mejoras! Viaja al pasado más remoto, al futuro lejano y al fin de los tiempos. Comienza una gran aventura para salvar el planeta…
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p style="font-size: 0.8rem;">
+                                        Es el célebre juego de rol creado por un magnífico equipo compuesto por Yuji Horii (DRAGON QUEST), Akira Toriyama (Dragon Ball) y los creadores de FINAL FANTASY. <br> A medida que avanzas en la trama, viajarás a distintas épocas históricas: el presente, el Medioevo, el futuro, la Prehistoria y la Antigüedad. Esta apasionante aventura épica entretendrá horas y horas tanto a los entusiastas de la serie como a los jugadores noveles. <br> Esta es la versión definitiva de CHRONO TRIGGER, y en ella se han actualizado los controles y se han renovado los gráficos y el sonido para que tu aventura sea todavía más agradable y divertida de jugar. Para completar tu viaje, este título también incluye las misteriosas mazmorras "Vórtice dimensional" y "Santuario olvidado". Enfréntate a los desafíos que te esperan y quizás consigas revelar secretos antiguos...
+                                    </p>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/w2d4vri21jurswa/Chrono_Trigger.rar/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/CoffeeTalk.jpg" class="card-img-top">
+                                <div class="card-content">
+                                    <h5 class="card-title">Coffee Talk</h5>
+                                    <p style="font-size: 0.8rem;">
+                                        Coffee Talk es un simulador de preparación de café y conversaciones sinceras sobre cómo escuchar los problemas de la gente moderna inspirados en la fantasía y ayudarlos sirviéndoles una bebida caliente o dos.
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p style="font-size: 0.8rem;">
+                                        Coffee Talk es un juego sobre escuchar los problemas de las personas y ayudarlas sirviéndoles una bebida caliente con los ingredientes que tienes en stock. <br> Es un juego que representa vidas de la manera más humana posible, mientras que tiene un elenco que es más que solo humanos. Sumérgete en las historias de los habitantes alternativos de Seattle, que van desde una dramática historia de amor entre un elfo y un súcubo, un extraterrestre que intenta comprender la vida de los humanos, y muchos otros lectores modernos encontrarán un fuerte eco en el mundo que los rodea.
+                                    </p>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/rvbznqexv43l4e2/Coffe_Talk.rar/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                                                      
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/DeadCells.jpg" class="card-img-top">
+                                <div class="card-content">
+                                    <h5 class="card-title">Dead Cells</h5>
+                                    <p style="font-size: 0.8rem;">
+                                        Dead Cells es un juego de acción de plataformas de estilo roguelite e inspirado en juegos tipo metroidvania. Explorarás un castillo en constante cambio y expansión, si es que logras abrirte paso contra los guardianes en los combates 2D de estilo Dark Souls.
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p style="font-size: 0.8rem;">
+                                        Roguelite? Metroidvania? Roguevania! <br> ¿Creciste con los juegos de tipo roguelike, fuiste testigo de los juegos roguelite y hasta de los roguelite-lite? Pues te presentamos nuestro juego de estilo roguevania, el hijo ilegítimo de un roguelite moderno (Rogue Legacy, Binding of Isaac, Enter the Gungeon, Spelunky, etc.) y un metroidvania de la vieja escuela (Castlevania: SotN y similares).
+                                    </p>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/cd06l8mdz85fuxm/Dead_Cells.rar/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/HollowKnight.webp" class="card-img-top" style="object-fit: cover;">
+                                <div class="card-content">
+                                    <h5 class="card-title">Hollow Knight</h5>
+                                    <p style="font-size: 0.8rem;">
+                                        ¡Forja tu propio camino en Hollow Knight! Una aventura épica a través de un vasto reino de insectos y héroes que se encuentra en ruinas. Explora cavernas tortuosas, combate contra criaturas corrompidas y entabla amistad con extraños insectos, todo en un estilo clásico en 2D dibujado...
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p style="font-size: 0.8rem;">
+                                        Enfréntate a las profundidades de un reino olvidado <br> Bajo la deteriorada ciudad de Petrópolis yace un antiguo reino en ruinas. A muchos les atrae la vida bajo la superficie y van en busca de riquezas, gloria o respuestas a viejos enigmas. Hollow Knight es una aventura de acción clásica en 2D ambientada en un vasto mundo interconectado. Explora cavernas tortuosas, ciudades antiguas y páramos mortales. Combate contra criaturas corrompidas, haz amistad con extraños insectos y resuelve los antiguos misterios que yacen en el corazón del reino.  
+                                    </p>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/xbkeemu5wroa6fl/Hollow_Knight.rar/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/HyperLight.png" class="card-img-top" style="object-fit: cover;">
+                                <div class="card-content">
+                                    <h5 class="card-title">Hyper Light</h5>
+                                    <p style="font-size: 0.8rem;">
+                                        Explora un hermoso, vasto y arruinado mundo plagado de peligros y tecnologías perdidas.
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p style="font-size: 0.8rem;">
+                                        Los ecos de un pasado oscuro y violento resuenan en una tierra salvaje, inmersa en tesoros y sangre. Hyper Light Drifter es un juego de rol de acción y aventura en la línea de los mejores clásicos de 16 bits, con mecánicas y diseños modernizados en una escala mucho mayor. Los vagabundos de este mundo son los recolectores de conocimientos olvidados, tecnologías perdidas e historias rotas. Nuestro Drifter es acosado por una enfermedad insaciable, viaja más lejos en las tierras de Buried Time, con la esperanza de descubrir una manera de calmar la enfermedad viciosa.
+                                    </p>
+                                    <ul style="font-size: 0.8rem;">
+                                        <li>Desde cada personaje hasta los sutiles elementos de fondo, todo está cuidadosamente animado a mano.</li>
+                                        <li>Fácil de aprender, difícil de dominar; los enemigos son feroces y numerosos, los peligros aplastarán fácilmente tu frágil cuerpo y las caras amistosas siguen siendo raras.</li>
+                                        <li>Actualice armas, aprenda nuevas habilidades, descubra equipos y atraviese un mundo oscuro y detallado con caminos ramificados y abundantes secretos.</li>
+                                    </ul>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/5hl4b8mt5730yoj/HyperLightDrifter.rar/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/KatanaZero.jpg" class="card-img-top" style="object-fit: cover;">
+                                <div class="card-content">
+                                    <h5 class="card-title">Katana Zero</h5>
+                                    <p style="font-size: 0.8rem;">
+                                        Katana ZERO es un juego de acción y plataformas neo-noir rebosante de personalidad, acción vertiginosa y combates de muerte instantánea. Usa tu espada, corre y manipula el tiempo para desvelar tu pasado en un despliegue acrobático brutalmente estético.
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p style="font-size: 0.8rem;">
+                                        Katana ZERO es un juego de acción y plataformas neo-noir rebosante de personalidad, acción vertiginosa y combates de muerte instantánea. Usa tu espada, corre y manipula el tiempo para desvelar tu pasado en un despliegue acrobático brutalmente estético.<br><br><b>Combate excepcional:</b> Supera a tus rivales según exija la situación. Desvía las balas para devolvérselas a tus enemigos, esquiva los ataques que recibas y manipula a tus contrincantes y los entornos con trampas y explosivos. No dejes supervivientes.<br><br><b>Secuencias creadas a mano:</b> Cada nivel ha sido diseñado de manera única para poder completarlo de incontables formas. Derrota a tus adversarios con creatividad, usando enfoques espontáneos para eliminar a cada cual como creas conveniente.
+                                    </p>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/evfegvk6gn15a1e/Katana_Zero.rar/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/Left4Dead2.jpg" class="card-img-top" style="object-fit: cover;">
+                                <div class="card-content">
+                                    <h5 class="card-title">Left4Dead 2</h5>
+                                    <p style="font-size: 0.8rem;">
+                                        Ambientado en el apocalipsis zombi, Left 4 Dead 2 (L4D2) es la esperadísima secuela del galardonado Left 4 Dead, el juego cooperativo número 1 de 2008. Este FPS cooperativo de acción terrorífica lleva a tus amigos y a ti a través de ciudades, pantanos y cementerios del Profundo Sur de EE. UU.
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p style="font-size: 0.8rem;">
+                                        Jugarás como uno de los cuatro supervivientes, armados con una amplia y devastadora colección de armas clásicas y modificadas. Además de armas de fuego, también podrás liberar un poco de agresión en contra de los infectados, usando una variedad de armas de combate cuerpo a cuerpo para hacer una verdadera carnicería, desde motosierras a hachas, y hasta un sartén mortal.<br><br>Pondrás a prueba estas armas en contra de (o jugando como infectado en modo Enfrentamiento) tres nuevos Infectados Especiales. También, te encontrarás con cinco nuevos infectados comunes no comunes, incluyendo a los aterradores embarrados.
+                                        <ul style="font-size: 0.8rem;">
+                                            <li>Una nueva generación de juego cooperativo de acción, de los creadores de Half-Life, Portal, Team Fortress y Counter-Strike.</li>
+                                            <li>Con más de 20 nuevas armas y objetos, encabezados por más de 10 armas de cuerpo a cuerpo, tales como hachas, motosierras, sartenes y bates de béisbol, los cuales te permiten tener un encuentro cercano y sangriento contra los zombis.</li>
+                                            <li>Nuevos supervivientes. Nueva historia. Nuevos diálogos.</li>
+                                            <li>Cinco extensas campañas para los modos Cooperativo, Enfrentamiento y Supervivencia.</li>
+                                        </ul>
+                                    </p>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/ionnxwomzggnz6c/Left_4_Dead_2.rar/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body d-flex">
+                                <img src="/src/frontend/img/img-game/loophero.jpg" class="card-img-top" style="object-fit: cover;">
+                                <div class="card-content">
+                                    <h5 class="card-title">Loop Hero</h5>
+                                    <p style="font-size: 0.8rem;">
+                                        El Lich ha lanzado el mundo entero a un bucle intemporal y ha sumido a sus habitantes en un caos sin fin. Utiliza una baraja creciente de cartas místicas para situar enemigos, edificios y terrenos en cada bucle de expedición único para el valiente héroe.
+                                    </p>
+                                    <p class="card-text">
+                                        Acerca de este juego:
+                                    </p>
+                                    <p style="font-size: 0.8rem;">
+                                        <b>Aventura infinita:</b> elige entre las clases de personaje desbloqueables y las cartas de la baraja antes de embarcarte en cada expedición por un bucle generado de forma aleatoria. Ninguna expedición es igual que las anteriores.<br><br><b>Planifica tu batalla:</b> sitúa de forma estratégica las cartas de edificios, terrenos y enemigos en cada bucle para crear tu propia ruta peligrosa. Busca el equilibrio entre las cartas para aumentar tus opciones de supervivencia al tiempo que recuperas valiosos tesoros y recursos para tu campamento.<br><br><b>Tesoros y mejoras:</b> acaba con criaturas amenazadoras, recupera objetos más fuertes para equiparlos sobre la marcha y desbloquea nuevas ventajas por el camino.
+                                    </p>
+                                    <div class="card-actions">
+                                        <a href="https://www.mediafire.com/file/87xw8b4bt37up33/Loop_Hero.zip/file" target="_blank">
+                                            <button class="btn btn-primary">Descargar</button>
+                                        </a>
+                                        <p class="card-text">
+                                            <img src="/src/frontend/img/icon/microsoft.svg" alt="Microsoft Icon">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <a href="/src/frontend/pages/pg2.html" class="btn btn-primary w-10 mt-3">Siguiente</a>
+                </div>                
+            </main>
+            <footer class="mt-auto py-3">
+                <div class="container">
+                    <p>&copy; 2024 PixelHub. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
