@@ -255,6 +255,10 @@ footer {
         font-size: 1.5rem;
         margin-top: 1rem;
     }
+
+    .carousel-slider {
+        animation: 15s slide infinite linear;
+      }
 }
 
 .button {
