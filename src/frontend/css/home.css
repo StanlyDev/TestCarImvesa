@@ -370,7 +370,7 @@ footer {
   
   .carousel-slider {
     display: flex; /* Use flex to ensure images are in a row */
-    animation: 35s slide infinite linear;
+    animation: 15s slide infinite linear;
   }
   
   .carousel-slider img {
