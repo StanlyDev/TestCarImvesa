@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 body {
@@ -173,25 +173,45 @@ h1 {
     color: #fff;
 }
 
-.card button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+button {
+    background-color: transparent !important; /* Fondo transparente para el botón */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin bordes */
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    position: relative; /* Necesario para posicionar la línea */
+    transition: color 0.3s; /* Transición suave para el color del texto */
+    border: none !important;
 }
 
-.card button:hover {
-    background-color: #0056b3;
+/* Línea debajo del botón en hover */
+button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; /* Color de la línea */
+    transform: scaleX(0); /* Inicia con la línea oculta */
+    transition: transform 0.3s; /* Transición suave para la línea */
+}
+
+/* Efecto hover */
+button:hover::after {
+    transform: scaleX(1); /* Muestra la línea en el hover */
+}
+
+button:hover {
+    color: #fff; /* El color del texto se mantiene blanco en hover */
+    font-weight: bold;
 }
 
 footer {
     background-color: transparent !important;
     color: #fff;
-    padding-top: 20px;
     bottom: 0;
     text-align: center;
 }
@@ -306,3 +326,57 @@ footer {
     width: auto;
     margin-right: 1rem;
   }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .carousel {
+    overflow: hidden;
+    padding: 1px 0;
+    background: #212121;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .carousel:before,
+  .carousel:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .carousel:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #212121);
+  }
+  
+  .carousel:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #212121);
+  }
+  
+  .carousel:hover .carousel-slider {
+    animation-play-state: paused;
+  }
+  
+  .carousel-slider {
+    display: flex; /* Use flex to ensure images are in a row */
+    animation: 35s slide infinite linear;
+  }
+  
+  .carousel-slider img {
+    height: 200px; /* Set a fixed height */
+    width: 300px; /* Set a fixed width */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    margin: 0 20px; /* Adjust spacing between images if needed */
+  }
+  

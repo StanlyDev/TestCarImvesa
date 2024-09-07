@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 body {
@@ -145,19 +145,40 @@ h1 {
 }
 
 .card button {
-    background-color: #007bff;
+    background-color: transparent !important;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    position: relative; /* Necesario para posicionar la línea */
+    transition: color 0.3s; /* Transición suave para el color del texto */
+}
+
+/* Línea debajo del botón en hover */
+.card button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; /* Color de la línea */
+    transform: scaleX(0); /* Inicia con la línea oculta */
+    transition: transform 0.3s; /* Transición suave para la línea */
+}
+
+/* Efecto hover */
+.card button:hover::after {
+    transform: scaleX(1); /* Muestra la línea en el hover */
 }
 
 .card button:hover {
-    background-color: #0056b3;
+    color: #fff; /* Cambia el color del texto en hover */
+    font-weight: bold;
 }
+
 
 /* Footer */
 footer {
@@ -332,3 +353,31 @@ footer {
     height: auto;
     border-radius: 0;
 }
+
+/* Estilo para la tabla sin bordes y transparente */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilo para las celdas de la tabla */
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: none; /* Sin bordes */
+}
+
+/* Estilo para los encabezados de la tabla */
+table th {
+    background-color: #212121; /* Fondo oscuro para encabezados */
+    color: #ffffff; /* Texto blanco para encabezados */
+}
+
+/* Estilo para el efecto hover en las celdas */
+table td:hover, table th:hover {
+    background-color: #e0e0e042; /* Fondo claro al pasar el ratón */
+    cursor: pointer; /* Cursor de mano para indicar interactividad */
+}
+
