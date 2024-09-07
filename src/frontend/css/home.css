@@ -18,20 +18,8 @@ body {
     width: 100%;
     z-index: 1;
     font-size: 1rem;
-    background-color: rgba(33, 33, 33, 0.8);
+    background-color: #2b2b2b;
     color: #fff;
-}
-
-.blurred-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 33, 33, 0.8);
-    backdrop-filter: blur(10px);
-    z-index: -1;
 }
 
 nav {
@@ -56,7 +44,7 @@ nav {
 
 .nav-container a {
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
 }
 
 .menu-toggle {
@@ -73,7 +61,7 @@ nav {
 
 main {
     padding-top: .5rem;
-    background-color: #212121;
+    background-color: #fff;
 }
 
 .container-1 {
@@ -92,11 +80,11 @@ main {
 
 a{
     text-decoration: none !important;
-    color: #fff !important;
+    color: #000 !important;
 }
 
 h1 {
-    color: #fff !important;
+    color: #000 !important;
     text-align: justify;
     font-weight: bold;
     margin-bottom: 20px;
@@ -125,7 +113,7 @@ h1 {
 
 .card {
     color: #fff !important;
-    background-color: #212121 !important;
+    background-color: #fff !important;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -136,17 +124,6 @@ h1 {
 .card:hover {
     transform: translateY(-10px);
 
-}
-
-.card-ser {
-    color: #fff !important;
-    background-color: #212121 !important;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-    height: 100px;
-    margin-left: 12rem;
 }
 
 .card-ser:hover {
@@ -173,6 +150,10 @@ h1 {
     color: #fff;
 }
 
+.card-text{
+  color: #fff !important;
+}
+
 button {
     background-color: transparent !important; /* Fondo transparente para el botón */
     color: #fff; /* Texto blanco */
@@ -194,7 +175,7 @@ button::after {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #fff; /* Color de la línea */
+    background-color: #000; /* Color de la línea */
     transform: scaleX(0); /* Inicia con la línea oculta */
     transition: transform 0.3s; /* Transición suave para la línea */
 }
@@ -211,7 +192,7 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: #212121 !important;
+    background-color: #2b2b2b !important;
     color: #fff;
     padding-top: 20px;
     bottom: 0;
@@ -425,7 +406,7 @@ footer {
   .carousel {
     overflow: hidden;
     padding: 1px 0;
-    background: #212121;
+    background: #fff;
     white-space: nowrap;
     position: relative;
   }
@@ -442,16 +423,12 @@ footer {
   
   .carousel:before {
     left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), #212121);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
   }
   
   .carousel:after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #212121);
-  }
-  
-  .carousel:hover .carousel-slider {
-    animation-play-state: paused;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
   }
   
   .carousel-slider {

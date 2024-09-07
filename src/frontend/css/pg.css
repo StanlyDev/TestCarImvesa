@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #212121 !important;
+    background-color: #fff !important;
 }
 
 a {
@@ -21,20 +21,8 @@ a {
     width: 100%;
     z-index: 1;
     font-size: 1rem;
-    background-color: rgba(33, 33, 33, 0.8);
+    background-color: #2b2b2b;
     color: #fff;
-}
-
-.blurred-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 33, 33, 0.8);
-    backdrop-filter: blur(10px);
-    z-index: -1;
 }
 
 nav {
@@ -85,7 +73,7 @@ main {
 }
 
 h1 {
-    color: #fff !important;
+    color: #000 !important;
     text-align: justify;
     font-weight: bold;
     margin-bottom: 20px;
@@ -98,16 +86,21 @@ h1 {
 }
 
 .card {
-    color: #fff !important;
-    background-color: #212121 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+.card {
+    color: #000 !important;
+    background-color: #fff !important;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s;
     height: 100%;
     display: flex;
-    flex-direction: row; /* Ajusta la dirección del contenido en vista normal */
+    flex-direction: row;
 }
-
 .card img {
     height: 250px;
     width: auto;
@@ -141,7 +134,7 @@ h1 {
 }
 
 .card p {
-    color: #fff;
+    color: #000;
 }
 
 .card button {
@@ -182,9 +175,8 @@ h1 {
 
 /* Footer */
 footer {
-    background-color: #212121 !important;
+    background-color: #2b2b2b !important;
     color: #fff;
-    padding-top: 20px;
     bottom: 0;
     text-align: left;
 }
@@ -205,7 +197,7 @@ footer {
   .socialContainer {
     width: 50px;
     height: 50px;
-    background-color: #212121;
+    background-color: #2b2b2b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,47 +352,41 @@ footer {
 }
 
 /* Botones estilizados */
-.button {
-    margin: 0;
-    height: auto;
-    background: transparent;
-    padding: 0;
+.card button {
+    background-color: transparent !important;
+    color: #000;
     border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
+    position: relative; /* Necesario para posicionar la línea */
+    transition: color 0.3s; /* Transición suave para el color del texto */
+    z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
 }
 
-.button {
-    --text-stroke-color: #fff;
-    --fs-size: 1em;
-    letter-spacing: 5px;
-    text-decoration: none;
-    font-size: var(--fs-size);
-    position: relative;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-
-.hover-text {
+.card button::after {
+    content: '';
     position: absolute;
-    box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--animation-color);
-    background-color: #212121;
-    width: 0%;
-    height: 2rem;
-    inset: 0;
-    border-right: var(--border-right) solid var(--animation-color);
-    overflow: hidden;
-    transition: 0.5s;
-    font-size: 10px;
-    -webkit-text-stroke: 1px var(--animation-color);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000; /* Color de la línea */
+    transform: scaleX(0); /* Inicia con la línea oculta */
+    transition: transform 0.3s; /* Transición suave para la línea */
+    z-index: -1; /* Coloca la línea detrás del texto */
 }
 
-.button:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 25px var(--animation-color));
+.card button:hover::after {
+    transform: scaleX(1); /* Muestra la línea en el hover */
 }
+
+.card button:hover {
+    color: #000; /* Cambia el color del texto en hover */
+    font-weight: bold;
+}
+
 
 @keyframes show {
     from{
@@ -440,6 +426,11 @@ footer {
     border-radius: 0;
 }
 
+.card-body img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
 /* Estilo para la tabla sin bordes y transparente */
 table {
     width: 100%;
@@ -457,13 +448,13 @@ table th, table td {
 
 /* Estilo para los encabezados de la tabla */
 table th {
-    background-color: #212121; /* Fondo oscuro para encabezados */
-    color: #ffffff; /* Texto blanco para encabezados */
+    background-color: #fff; /* Fondo oscuro para encabezados */
+    color: #000; /* Texto blanco para encabezados */
 }
 
 /* Estilo para el efecto hover en las celdas */
 table td:hover, table th:hover {
-    background-color: #e0e0e042; /* Fondo claro al pasar el ratón */
+    background-color: #e0e0e0af; /* Fondo claro al pasar el ratón */
     cursor: pointer; /* Cursor de mano para indicar interactividad */
 }
 
