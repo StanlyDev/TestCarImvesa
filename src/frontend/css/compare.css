@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.blurred-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 1rem;
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+}
+
+.nav-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: auto;
+}
+
+.nav-container li {
+    margin: 0 10px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle2 {
+    display: none;
+}
+
+.nav-container li:hover {
+    font-weight: bold;
+}
+
+main {
+    padding-top: .5rem;
+    background-color: #fff;
+}
+
+.container-1 {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-3 {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-service{
+    margin-top: 1rem;
+}
+
+a{
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+h1 {
+    color: #000 !important;
+    text-align: justify;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    color: #fff !important;
+    background-color: #fff !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+}
+
+.card-ser:hover {
+    transform: translateY(-10px);
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .p-6 {
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #fff;
+}
+
+.card-text{
+  color: #fff !important;
+}
+
+button {
+    background-color: transparent !important; /* Fondo transparente para el botón */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Necesario para posicionar la línea */
+    transition: color 0.3s; /* Transición suave para el color del texto */
+    border: none !important;
+}
+
+/* Línea debajo del botón en hover */
+button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000; /* Color de la línea */
+    transform: scaleX(0); /* Inicia con la línea oculta */
+    transition: transform 0.3s; /* Transición suave para la línea */
+}
+
+/* Efecto hover */
+button:hover::after {
+    transform: scaleX(1); /* Muestra la línea en el hover */
+}
+
+button:hover {
+    color: #fff; /* El color del texto se mantiene blanco en hover */
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #2b2b2b !important;
+    color: #fff;
+    padding-top: 20px;
+    bottom: 0;
+    text-align: left;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.card-foot {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    margin-left: 7rem;
+    gap: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 50px;
+    height: 50px;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* facebook*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(33, 33, 33, 0.8);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-container.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-container li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle2{
+        display: none;
+        color: red;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .carousel-slider {
+        animation: 15s slide infinite linear;
+      }
+
+    footer{
+        text-align: center;
+    }
+
+    .card-foot{
+        margin-left: 0;
+    }
+
+    .logoMarcas{
+        margin-right: 150px;
+    }
+}
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button {
+    --text-stroke-color: #fff;
+    --fs-size: 1em;
+    letter-spacing: 5px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    background-color: #212121;
+    width: 0%;
+    height: 2rem;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    font-size: 10px;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--animation-color))
+  }
+
+  @keyframes show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    } 
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+  }
+
+  .card{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+  }
+
+  .card-text img{
+    height: 2rem;
+    width: auto;
+    margin-right: 1rem;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+/* Estilos generales para los formularios */
+form.select-car {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: .8rem;
+}
+
+/* Etiquetas de los formularios */
+form.select-car label {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Selectores del formulario */
+form.select-car select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Añade espacio entre los formularios */
+.row .select-car {
+    margin-bottom: 30px;
+}
+
+/* Diseño responsive */
+@media (min-width: 576px) {
+    form.select-car {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    form.select-car {
+        padding: 20px;
+    }
+}
+
+/* Contenedor principal para formularios y gráficos */
+.comparison-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Contenedor de formularios */
+.forms-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor de gráficos */
+.car-chart {
+    background-color: #2b2b2b;
+    width: 70%;
+    padding: 30px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    right: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+.charts label{
+    color: #000;
+    margin-left: .5rem;
+}
