@@ -113,22 +113,12 @@ h1 {
 
 .card {
     color: #fff !important;
-    background-color: #fff !important;
+    background-color: #2b2b2b !important;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
     height: 100%;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-
-}
-
-.card-ser:hover {
-    transform: translateY(-10px);
-
 }
 
 .card img {
@@ -147,7 +137,7 @@ h1 {
 }
 
 .card p {
-    color: #fff;
+    color: #fff !important;
 }
 
 .card-text{
@@ -479,6 +469,50 @@ form.select-car select {
 }
 
 .charts label{
-    color: #000;
+    color: #fff;
     margin-left: .5rem;
 }
+
+/* Estilo para la tabla sin bordes y transparente */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilo para las celdas de la tabla */
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: none; /* Sin bordes */
+}
+
+/* Estilo para los encabezados de la tabla */
+table th {
+    background-color: transparent; /* Fondo oscuro para encabezados */
+    color: #fff; /* Texto blanco para encabezados */
+}
+
+/* Estilo para el efecto hover en las celdas */
+table td:hover, table th:hover {
+    background-color: #e0e0e0af; /* Fondo claro al pasar el ratón */
+    cursor: pointer; /* Cursor de mano para indicar interactividad */
+}
+
+/* Imagenes visibles inicialmente */
+#car-image1, #car-image2 {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    opacity: 1; /* Imagen por defecto visible al cargar */
+    transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
+  }
+  
+  /* Cuando una nueva imagen esté cargada, se oculta temporalmente para la animación */
+  #car-image1.loaded, #car-image2.loaded {
+    opacity: 1;
+  }
+  
+  #car-image1.animate, #car-image2.animate {
+    opacity: 0; /* Oculta la imagen temporalmente antes de la transición */
+  }  
